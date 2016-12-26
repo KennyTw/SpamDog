@@ -1,0 +1,31 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=SpamDog.chm
+Contents file=Table of Contents.hhc
+Default topic=DogHelp.htm
+Display compile notes=No
+Display compile progress=Yes
+Index file=Index.hhk
+Language=0x404 中文 (台灣)
+Title=SpamDog 使用說明
+
+
+[FILES]
+version.htm
+DogHelp.htm
+FirstUse.htm
+FirstUse-IdentMail.htm
+FirstUse-Learn.htm
+FirstUse-Report.htm
+FirstUse-WizStart.htm
+FirstUs-MgrMail.htm
+Setup.htm
+Setup-Db.htm
+Setup-Msg.htm
+Setup-Other.htm
+Setup-Rule.htm
+Setup-Scan.htm
+
+[INFOTYPES]
+

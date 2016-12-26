@@ -1,0 +1,49 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Swfiledb - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x404 /fo"Debug/Swfiledb.res" /d "_DEBUG" "D:\SpamDog\Swfiledb\Swfiledb.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSP26.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DLLDIR_EX" /D "SWFILEDB_EXPORTS" /Fp"Debug/Swfiledb.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\SpamDog\Swfiledb\DB.cpp"
+"D:\SpamDog\Swfiledb\Swfiledb.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSP26.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSP27.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DLLDIR_EX" /D "SWFILEDB_EXPORTS" /Fp"Debug/Swfiledb.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\SpamDog\Swfiledb\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSP27.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSP28.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"Debug/Swfiledb.pdb" /debug /machine:I386 /out:"c:\windows\system32\Swfiledb.dll" /implib:"Debug/Swfiledb.lib" /pdbtype:sept 
+.\Debug\DB.obj
+.\Debug\StdAfx.obj
+.\Debug\Swfiledb.obj
+.\Debug\Swfiledb.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\1\RSP28.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DB.cpp
+Swfiledb.cpp
+Generating Code...
+Linking...
+   Creating library Debug/Swfiledb.lib and object Debug/Swfiledb.exp
+
+
+
+<h3>Results</h3>
+Swfiledb.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

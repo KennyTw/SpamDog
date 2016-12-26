@@ -1,0 +1,70 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SpamDogLite - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\KennyLee\LOCALS~1\Temp\RSP63.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /Od /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fr"Release/" /Fp"Release/SpamDogLite.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\CVSWORK\SpamDog\SpamDogLite\MainFrm.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\KennyLee\LOCALS~1\Temp\RSP63.tmp" 
+Creating temporary file "C:\DOCUME~1\KennyLee\LOCALS~1\Temp\RSP64.tmp" with contents
+[
+MAPI32.lib Swspam.lib Swmatcher.lib Swvirus.lib Swparser.lib Swzip.lib Swfiledb.lib Swsocket.lib Dbghelp.lib SwOlapi.lib  Winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/SpamDogLite.pdb" /debug /machine:I386 /out:"Release/SpamDogLite.exe" /libpath:"../Swspam/Release" /libpath:"../Swmatcher/Release" /libpath:"../Swvirus/Debug" /libpath:"../Swparser/Release" /libpath:"../Swzip/Release" /libpath:"../Swfiledb/Release" /libpath:"../SwSocket/Release" /libpath:"../SwVirus/Release" /libpath:"../SwOlApi/Release" 
+.\Release\AboutThis.obj
+.\Release\ColorBox.obj
+.\Release\FlatButton.obj
+.\Release\LiveUpdate.obj
+.\Release\MailFolderLearn.obj
+.\Release\MailReportFrm.obj
+.\Release\MainFrm.obj
+.\Release\MapiAddr.obj
+.\Release\MAPIAdviseSink.obj
+.\Release\MapiEx.obj
+.\Release\MapiFolder.obj
+.\Release\MapiProf.obj
+.\Release\MsgFrm.obj
+.\Release\MsgSetupFrm.obj
+.\Release\OEAddr.obj
+.\Release\OEapi.obj
+.\Release\OEWnd.obj
+.\Release\OtherSetupFrm.obj
+.\Release\ReportFrm.obj
+.\Release\ReportTab.obj
+.\Release\RuleEditFrm.obj
+.\Release\RuleSetupFrm.obj
+.\Release\ScanSetupFrm.obj
+.\Release\SetupFrm.obj
+.\Release\SetupTab.obj
+.\Release\SpamDogLite.obj
+.\Release\StdAfx.obj
+.\Release\SysSetupFrm.obj
+.\Release\TurnDB.obj
+.\Release\webbrowser3.obj
+.\Release\WizDone.obj
+.\Release\WizGetDogId.obj
+.\Release\WizLearnTest.obj
+.\Release\WizOther.obj
+.\Release\WizSetOutlook.obj
+.\Release\WizSheet.obj
+.\Release\WizWelcome.obj
+.\Release\WPStatic.obj
+.\Release\SpamDogLite.res
+]
+Creating command line "link.exe @C:\DOCUME~1\KennyLee\LOCALS~1\Temp\RSP64.tmp"
+<h3>Output Window</h3>
+Compiling...
+MainFrm.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+SpamDogLite.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

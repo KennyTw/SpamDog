@@ -1,0 +1,6 @@
+LIBRARY Swspam
+
+EXPORTS
+createSPAMDBObject
+DllParseKeyFile
+DllSendReport

@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SMTPservice - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\KennyLee\LOCALS~1\Temp\RSP2B8.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /Od /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "_AFXDLL" /FR"Release/" /Fp"Release/SMTPservice.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\CVSWORK\SpamDog\SMTPservice\SMTPservice.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\KennyLee\LOCALS~1\Temp\RSP2B8.tmp" 
+Creating temporary file "C:\DOCUME~1\KennyLee\LOCALS~1\Temp\RSP2B9.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Swsocket2.lib DbgHelp.Lib /nologo /subsystem:console /incremental:no /pdb:"Release/SMTPservice.pdb" /debug /machine:I386 /out:"Release/SMTPservice.exe" /libpath:"../../NSM/Swsocket2/Debug" 
+.\Release\SMTPservice.obj
+.\Release\StdAfx.obj
+.\Release\SMTPservice.res
+]
+Creating command line "link.exe @C:\DOCUME~1\KennyLee\LOCALS~1\Temp\RSP2B9.tmp"
+<h3>Output Window</h3>
+Compiling...
+SMTPservice.cpp
+D:\CVSWORK\SpamDog\SMTPservice\SMTPservice.cpp(205) : error C2660: 'Send' : function does not take 6 parameters
+D:\CVSWORK\SpamDog\SMTPservice\SMTPservice.cpp(440) : error C2039: 'ThreadDnsSend' : is not a member of 'CSMTPClient'
+        D:\CVSWORK\SpamDog\SMTPservice\../../NSM/Swsocket2/SMTPClient.h(46) : see declaration of 'CSMTPClient'
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+SMTPservice.exe - 2 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

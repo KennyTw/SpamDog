@@ -1,0 +1,129 @@
+From: 軟體工廠 <service@softworking.com>
+Subject: [重大更新] SpamDog v1.01 開放下載了
+Content-Type: text/html
+
+<head>
+<title>softworking.com - 軟體工廠</title>
+<meta http-equiv="Content-Language" content="zh-tw">
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+</head>
+
+<style type="text/css">
+<!--
+A.css1:visited  {color: #336699; text-decoration: none}
+A.css1:link  {color: #336699; text-decoration: none}
+A.css1:active  {color: #336699; text-decoration: none}
+A.css1:hover   {color: #336699; text-decoration: underline}
+
+A.css2:visited  {color: #000000; text-decoration: none}
+A.css2:link  {color: #000000; text-decoration: none}
+A.css2:active  {color: #000000; text-decoration: none}
+A.css2:hover   {color: #000000; text-decoration: underline}
+
+A.css3:visited  {color: #FFFFFF; text-decoration: none}
+A.css3:link  {color: #FFFFFF; text-decoration: none}
+A.css3:active  {color: #FFFFFF; text-decoration: none}
+A.css3:hover   {color: #FFFFFF; text-decoration: underline}
+//-->
+</style>
+
+ 
+
+
+<body topmargin="12" leftmargin="1" rightmargin="1" bottommargin="12" bgcolor="#000000">
+
+<div align="center">
+
+<table border="6" width="90%" id="table1" cellspacing="0" bgcolor="#FFFFFF" bordercolor="#000000" cellpadding="4">
+	<tr>
+		<td>
+		<table border="0" width="100%" id="table4" cellspacing="4">
+			<tr>
+				<td width="190"><img border="0" src="http://www.softworking.com/images/softworking.jpg"></td>
+				<td bgcolor="#336699" width="100%" align="right" >
+				<table border="0" width="100%" id="table10" cellspacing="6">
+					<tr>
+						<td style="font-family: 新細明體; font-size: 9pt; color: #FFFFFF">
+						<a href="mailto:service@softworking.com" class="css3">網站廣告合作 , 刊登 , 目前免費 , 請來信洽詢 .</a></td>
+						<td width="75">
+						<p align="right">
+				<img border="0" src="http://www.softworking.com/images/sf1.jpg" width="75" height="20"></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" height="242">
+		<table border="0" width="100%" id="table3"><tr>
+		<td width="190" bgcolor="#FEA203" style="font-family: 新細明體; font-size: 9pt; color: #FFFFFF">
+		<p align="center">活 動 快 報</td>
+		<td style="font-family: 新細明體; font-size: 11pt; color: #FFFFFF" rowspan="5" width="1"></td>
+		<td style="font-family: 新細明體; font-size: 11pt; color: #FFFFFF; line-height:150%" bgcolor="#336699">
+		&nbsp;&nbsp;SpamDog v1.01 正式上線</td>
+	</tr>
+	<tr>
+		<td style="font-family: 新細明體; font-size: 9pt; line-height: 150%" width="190" valign="top">
+		<table border="0" width="100%" id="table11" style="font-family: 新細明體; font-size: 9pt; line-height: 150%">
+			<tr>
+				<td valign="top">
+		<a class="css1" href="http://bbs.toseek.net/">*</a></td>
+				<td><a class="css1" href="http://www.softworking.com/click.asp?http://bbs.toseek.net/?id=1"> <b>深藍色論壇</b> - 生活, 電腦, 趣味, 豐富您生活的論壇</a></td>
+			</tr>
+			<tr>
+				<td valign="top">
+		<a class="css1" href="mailto:service@softworking.com">* </a></td>
+				<td><a class="css1" href="mailto:service@softworking.com">網站合作, <b>廣告免費</b> , 來信洽詢</a></td>
+			</tr>
+		</table>
+		<a class="css1" href="http://bbs.toseek.net/">&nbsp;</a><br>
+		　</td>
+		<td style="font-family: 新細明體; font-size: 9pt; line-height: 200%" valign="top">
+		<table border="0" width="100%" cellspacing="6" id="table15" style="font-family: 新細明體; font-size: 9pt">
+			<tr>
+				<td style="line-height: 200%">
+				<p>&nbsp;&nbsp; SpamDog v1.01 已在 2005.7.12 上線 , 您一定要馬上去下載更新 , 
+				因為我們將停止對所有 v1.0 舊版的更新 .<br>
+&nbsp;&nbsp; SpamDog v1.01 的版本修正如下 :<ul>
+					<li>重新調整資料庫存取的校能 , 使自動更新的 cpu loading 大幅降低 , 並加快信件辨識的速度 .</li>
+					<li>資料庫重組提醒</li>
+					<li>垃圾信的自動回報 , 改由當使用者清除垃圾信件匣時 , 立即啟動 .</li>
+					<li>可自動刪除出現次數較多的垃圾郵件</li>
+					<li>當使用者辨識發生問題時 , 垃圾郵件中心 , 可以立刻察覺 , 與使用者聯絡處理</li>
+					<li>提高垃圾郵件辨識率</li>
+					<li>解決部份訊息顯示不順的問題</li>
+					<li>解決 Outlook 與 OutLook Express 同時開啟的問題</li>
+					<li>解決清除垃圾郵件匣 icon 狀態不精確的問題</li>
+					</ul>
+					<p>&nbsp;&nbsp; <a href="http://www.softworking.com">下載 SpamDog v1.01</a></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td style="font-family: 新細明體; font-size: 9pt; line-height: 200%" width="190">
+		　</td>
+		<td  style="font-family: 新細明體; font-size: 11pt; color: #FFFFFF; line-height:150%">
+		　</td>
+	</tr>
+	<tr>
+		<td style="font-family: 新細明體; font-size: 9pt; line-height: 200%" width="190">
+		　</td>
+		<td style="font-family: 新細明體; font-size: 9pt; line-height: 200%">
+		　</td>
+	</tr>
+	<tr>
+		<td style="font-family: 新細明體; font-size: 9pt; line-height: 200%" width="190">
+		　</td>
+		<td style="font-family: 新細明體; font-size: 9pt; line-height: 200%">
+		<hr>
+		<font color="#FF0000">如果您在設定中 , 有開啟 , 自動刪除大於 n 天的系統訊息 , 
+		本訊息將會自動在時間內被刪除 , 如果您需要保留此信件 , 請將此信件移出系統訊息信件匣 , 或者關閉自動刪除的功能 .</font></td>
+	</tr>
+	</table>
+
+		<hr><font face="Arial" size="2">softworking.com 2005</font></td>
+	</tr>
+</table></div>

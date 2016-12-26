@@ -1,0 +1,918 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 1\r\n"
+    "#pragma code_page(950)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SpamDog.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.cht\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SpamDog.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\Bluecase.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\RecycleBin.ico"
+IDI_ICON4               ICON    DISCARDABLE     "res\\Trash1.ico"
+IDI_ICON5               ICON    DISCARDABLE     "res\\Trash2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SPAMDOG_DIALOG DIALOGEX 0, 0, 87, 142
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SpamDog Lite"
+FONT 9, "新細明體", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "刪除垃圾信",IDC_BUTTON1,13,51,72,14
+    PUSHBUTTON      "設定",IDC_BUTTON2,13,96,72,14
+    PUSHBUTTON      "結束",IDC_BUTTON3,13,111,72,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | SS_SUNKEN,2,127,83,
+                    1
+    CTEXT           "Static",IDC_STATIC1,2,130,83,10,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "掃描收信匣",IDC_BUTTON4,13,81,72,14
+    PUSHBUTTON      "整理信件",IDC_BUTTON5,13,66,72,14
+    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    WS_TABSTOP,2,2,83,46
+    LTEXT           "頁面載入中....",IDC_STATIC,13,21,49,8
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT,2,51,10,74
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | SS_SUNKEN,2,49,83,
+                    1
+END
+
+IDD_MSGFRM_DIALOG DIALOGEX 700, 900, 176, 55
+STYLE DS_SYSMODAL | WS_POPUP | WS_BORDER
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_STATIC2,33,7,134,40,NOT WS_GROUP
+    PUSHBUTTON      "",IDC_BUTTON1,162,2,12,13
+    CTEXT           "Static",IDC_STATIC_TIME,2,33,25,8,0,WS_EX_TRANSPARENT
+END
+
+IDD_SETUPFRM_DIALOG DIALOG DISCARDABLE  0, 0, 314, 304
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "功能設定"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,2,7,310,269
+    PUSHBUTTON      "確定",IDC_BUTTON1,209,283,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON2,262,283,50,14
+END
+
+IDD_SYSSETUPFRM_DIALOG DIALOG DISCARDABLE  0, 0, 310, 255
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER_MSGDELAY,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,119,19,98,13
+    LTEXT           "訊息延遲時間",IDC_STATIC,67,21,50,8
+    LTEXT           "速度",IDC_STATIC,67,37,23,8
+    CONTROL         "Slider1",IDC_SLIDER_UNKNOWNRATE,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,109,78,98,13
+    CONTROL         "Slider2",IDC_SLIDER_MSGSPEED,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,91,33,98,13
+    LTEXT           "顯示視窗參數",IDC_STATIC,7,7,53,8
+    LTEXT           "判斷嚴謹度",IDC_STATIC,67,82,40,8
+    LTEXT           "掃描核心設定",IDC_STATIC,7,67,53,8
+    LTEXT           "掃描演算法",IDC_STATIC,67,97,43,8
+    CONTROL         "定址掃描法",IDC_CHECK_SPAMADDRESS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,114,97,53,10
+    LTEXT           "Outlook 設定",IDC_STATIC,7,153,53,8
+    LTEXT           "登入設定檔",IDC_STATIC,67,164,38,8
+    CONTROL         "允許空白寄件者",IDC_CHECK_NULLSENDER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,67,124,67,10
+    CONTROL         "允許空白主旨",IDC_CHECK_NULLSUBJECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,167,124,60,10
+    CONTROL         "允許空白內容",IDC_CHECK_NULLCONTENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,67,139,60,10
+    COMBOBOX        IDC_COMBO1,112,162,62,51,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "其它設定",IDC_STATIC,7,175,53,8
+    CONTROL         "開機時起動",IDC_CHECK_BOOTSTART,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,67,187,53,10
+    CONTROL         "主旨分析法",IDC_CHECK_SPAMSUBJECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,171,97,53,10
+    CONTROL         "顯示垃圾信件通知",IDC_CHECK_BADSHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,115,54,75,10
+    LTEXT           "Static",IDC_STATIC_DELAYVALUE,224,20,76,8
+    LTEXT           "Static",IDC_STATIC_SPEEDVALUE,194,36,106,8
+    LTEXT           "Static",IDC_STATIC_UNKNOWNVALUE,209,81,34,8
+    LTEXT           "",IDC_STATIC,60,10,231,2,SS_SUNKEN | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC,60,70,231,2,SS_SUNKEN | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC,60,156,231,2,SS_SUNKEN | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC,59,178,231,2,SS_SUNKEN | NOT WS_GROUP
+    CONTROL         "顯示通知",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,67,54,45,10
+    LTEXT           "啟動環境",IDC_STATIC,67,206,39,8
+    COMBOBOX        IDC_COMBO2,109,203,69,37,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "自動寄信回覆通知",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,167,141,75,10
+    CONTROL         "同時起動郵件程式",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,121,186,75,10
+END
+
+IDD_RULESETUPFRM_DIALOG DIALOG DISCARDABLE  0, 0, 310, 255
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "新增",IDC_BUTTON2,264,18,36,14
+    PUSHBUTTON      "修改",IDC_BUTTON1,264,36,36,14
+    PUSHBUTTON      "刪除",IDC_BUTTON3,264,54,36,14
+    PUSHBUTTON      "上移",IDC_BUTTON7,264,81,36,14
+    PUSHBUTTON      "下移",IDC_BUTTON8,264,98,36,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_AUTOARRANGE | 
+                    WS_BORDER | WS_TABSTOP,7,18,250,230
+    LTEXT           "自訂郵件規則",IDC_STATIC,7,7,53,8
+    LTEXT           "",IDC_STATIC,60,10,231,2,SS_SUNKEN | NOT WS_GROUP
+END
+
+IDD_RULEEDITFRM_DIALOG DIALOG DISCARDABLE  0, 0, 239, 156
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "規則編輯"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT2,7,36,225,36,ES_MULTILINE | ES_AUTOHSCROLL
+    PUSHBUTTON      "選擇寄件者",IDC_BUTTON1,88,7,46,14
+    PUSHBUTTON      "顯示顏色",IDC_BUTTON4,7,76,39,14
+    CONTROL         "",IDC_COLORBOX_SENDER,"Static",SS_BLACKRECT,49,76,41,14
+    PUSHBUTTON      "確定",IDC_BUTTON2,130,135,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON3,182,135,50,14
+    CONTROL         "寄件者",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,47,9,38,10
+    CONTROL         "主旨",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,137,9,31,
+                    10
+    CONTROL         "一般提示",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,49,111,45,10
+    CONTROL         "特殊提示",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,98,111,
+                    45,10
+    PUSHBUTTON      "選擇移動目錄",IDC_BUTTON5,7,93,55,14
+    LTEXT           "不移動",IDC_STATICFOLDER,65,93,161,14,SS_CENTERIMAGE
+    LTEXT           "篩選條件:",IDC_STATIC,7,10,36,8
+    LTEXT           "條件描述: (多寄件者時以 ; 分隔)",IDC_STATIC,7,24,117,8
+    LTEXT           "提示方式:",IDC_STATIC,7,111,36,8
+    LTEXT           "",IDC_STATIC_MEMO,97,79,135,8
+END
+
+IDD_MAPIFOLDER_DIALOG DIALOG DISCARDABLE  0, 0, 228, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "移動目錄"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    7,24,159,170
+    LTEXT           "選擇移動目錄 :",IDC_STATIC,7,7,49,8
+    PUSHBUTTON      "確定",IDC_BUTTON1,171,23,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON2,171,39,50,14
+END
+
+IDD_ABOUTTHIS_DIALOG DIALOG DISCARDABLE  0, 0, 320, 201
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,25,21,20,20
+    LTEXT           "SpamDog Lite (08Fix)",IDC_STATIC,62,26,82,11,
+                    SS_NOPREFIX
+    CONTROL         "產品網址 : http://www.softworking.com",IDC_STATIC,
+                    "Static",SS_LEFTNOWORDWRAP | WS_GROUP,127,77,149,8
+    LTEXT           "服務信箱 : service@softworking.com",IDC_STATIC,127,90,
+                    161,8
+    LTEXT           "版權所有 軟體工廠 softworking.com",IDC_STATIC,169,186,
+                    136,8,NOT WS_VISIBLE
+    PUSHBUTTON      "Go",IDC_BUTTON1,99,76,23,11,NOT WS_TABSTOP
+    PUSHBUTTON      "Go",IDC_BUTTON13,99,90,23,11,NOT WS_TABSTOP
+    LTEXT           "最後更新時間 :",IDC_STATIC,7,173,73,8,NOT WS_VISIBLE
+    LTEXT           "Static",IDC_STATIC_APLASTUPDATE,82,173,99,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "使用者編號 :",IDC_STATIC,7,186,44,8,NOT WS_VISIBLE
+    LTEXT           "Static",IDC_STATIC_DOGID,56,186,52,8,NOT WS_VISIBLE
+    LTEXT           "Static",IDC_STATIC_LICENSED,7,158,118,8,SS_NOPREFIX | 
+                    NOT WS_VISIBLE
+    LTEXT           "MSN: service@softworking.com",IDC_STATIC,127,116,186,8
+    PUSHBUTTON      "贊助本軟體",IDC_BUTTON16,127,149,134,14,NOT WS_TABSTOP
+    LTEXT           "此軟體無版權問題,歡迎拷貝流通",IDC_STATIC,61,40,150,8
+    LTEXT           "作者Blog : http://bloguide.ettoday.com/flyrabbit/",
+                    IDC_STATIC,127,103,161,8
+    PUSHBUTTON      "Go",IDC_BUTTON14,99,104,23,11,NOT WS_TABSTOP
+END
+
+IDD_LIVEUPDATE_DIALOG DIALOG DISCARDABLE  0, 0, 310, 255
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "修復資料庫",IDC_BUTTON7,57,25,50,14
+    PUSHBUTTON      "重組資料庫",IDC_BUTTON4,57,45,50,14
+    CONTROL         "Slider1",IDC_SLIDER_CUTDB,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,111,45,96,13
+    PUSHBUTTON      "備份資料庫",IDC_BUTTON2,57,66,50,14
+    LTEXT           "資料庫維護",IDC_STATIC,13,7,42,8
+    LTEXT           "Static",IDC_STATIC_STATUS,58,87,236,14,SS_CENTERIMAGE
+    LTEXT           "Static",IDC_STATIC_CUTVALUE,209,47,80,8
+    LTEXT           "",IDC_STATIC,60,10,226,2,SS_SUNKEN | NOT WS_GROUP
+END
+
+IDD_WIZ_FOLDERLEARN DIALOG DISCARDABLE  0, 0, 273, 168
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Property Page"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "全部學習為垃圾郵件",IDC_BUTTON1,188,58,78,14
+    PUSHBUTTON      "全部學習為正常郵件",IDC_BUTTON2,188,76,78,14
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    7,150,176,11
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_NOTOOLTIPS | WS_BORDER | WS_TABSTOP,7,
+                    7,178,136
+END
+
+IDD_MSGSETUPFRM_DIALOG DIALOG DISCARDABLE  0, 0, 320, 235
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "正常郵件",IDC_BUTTON13,77,17,38,14
+    PUSHBUTTON      "無法辨識郵件",IDC_BUTTON5,165,17,52,14
+    PUSHBUTTON      "垃圾郵件",IDC_BUTTON14,77,36,38,14
+    PUSHBUTTON      "病毒郵件",IDC_BUTTON6,179,36,38,14
+    PUSHBUTTON      "字型顏色",IDC_BUTTON15,77,55,38,14
+    CONTROL         "Slider1",IDC_SLIDER_MSGDELAY,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,119,88,98,13
+    CONTROL         "Slider2",IDC_SLIDER_MSGSPEED,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,91,102,98,13
+    CONTROL         "顯示通知",IDC_CHECK_SHOWMSG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,67,123,45,10
+    CONTROL         "顯示垃圾信件通知",IDC_CHECK_BADSHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,115,123,75,10
+    CONTROL         "",IDC_COLORBOX_OK,"Static",SS_BLACKRECT,121,18,41,14
+    LTEXT           "系統提醒顏色設定",IDC_STATIC,7,7,70,8
+    CONTROL         "",IDC_COLORBOX_XX,"Static",SS_BLACKRECT,221,17,41,14
+    CONTROL         "",IDC_COLORBOX_SPAM,"Static",SS_BLACKRECT,121,36,41,14
+    CONTROL         "",IDC_COLORBOX_VR,"Static",SS_BLACKRECT,221,36,41,14
+    CONTROL         "",IDC_COLORBOX_TEXT,"Static",SS_BLACKRECT,121,55,41,14
+    LTEXT           "訊息延遲時間",IDC_STATIC,67,90,50,8
+    LTEXT           "速度",IDC_STATIC,67,106,23,8
+    LTEXT           "顯示視窗參數",IDC_STATIC,7,76,53,8
+    LTEXT           "Static",IDC_STATIC_DELAYVALUE,224,89,76,8
+    LTEXT           "Static",IDC_STATIC_SPEEDVALUE,194,105,106,8
+    LTEXT           "",IDC_STATIC,81,10,222,2,SS_SUNKEN | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC,66,79,223,2,SS_SUNKEN | NOT WS_GROUP
+END
+
+IDD_SCANSETUPFRM_DIALOG DIALOG DISCARDABLE  0, 0, 320, 261
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER_UNKNOWNRATE,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,85,
+                    17,98,13
+    CONTROL         "定址掃描法",IDC_CHECK_SPAMADDRESS,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,219,61,53,
+                    10
+    CONTROL         "主旨分析法",IDC_CHECK_SPAMSUBJECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,90,34,53,10
+    CONTROL         "允許空白寄件者",IDC_CHECK_NULLSENDER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,145,34,67,10
+    CONTROL         "允許空白主旨",IDC_CHECK_NULLSUBJECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,90,49,60,10
+    CONTROL         "郵件追蹤器",IDC_CHECK_MAILTRACER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,43,71,53,10
+    LTEXT           "日",IDC_STATIC,170,84,8,8
+    EDITTEXT        IDC_EDIT_TRACEREXPIRE,128,81,40,14,ES_AUTOHSCROLL
+    LTEXT           "KBytes",IDC_STATIC,215,106,30,8
+    LTEXT           "判斷嚴謹度 :",IDC_STATIC,43,20,40,8
+    LTEXT           "掃描核心設定",IDC_STATIC,7,7,53,8
+    LTEXT           "掃描演算法 :",IDC_STATIC,43,35,44,8
+    LTEXT           "Static",IDC_STATIC_UNKNOWNVALUE,189,20,34,8
+    LTEXT           "超大信件大小 :",IDC_STATIC,43,106,57,8
+    LTEXT           "郵件追蹤器有效時間: ",IDC_STATIC,43,86,80,8
+    LTEXT           "RBL1 :",IDC_STATIC,42,159,28,8,NOT WS_VISIBLE
+    LTEXT           "RBL2 :",IDC_STATIC,42,175,27,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_RBL1,70,156,106,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_RBL2,70,172,106,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    LTEXT           "DNS :",IDC_STATIC,42,191,27,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_DNS,70,188,72,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_IPKEY,136,141,159,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    CONTROL         "所有內部信件列為正常信",IDC_CHECK_AUTHEX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,43,125,121,10
+    CONTROL         "IP 來源辨識法",IDC_CHECK_IPIDENT,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_TABSTOP,219,76,85,10
+    CONTROL         "回報信件到垃圾郵件中心",IDC_CHECK_NEEDREPORT,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_TABSTOP,43,203,130,10
+    CONTROL         "信件來源IP判讀關鍵字",IDC_CHECK_IPSTRIDENT,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_TABSTOP,40,143,93,10
+    CONTROL         "Slider1",IDC_SLIDER_MAXATTSIZE,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,93,104,100,13
+    LTEXT           "Static",IDC_STATIC_MAXATTSIZE,195,106,16,8
+    CONTROL         "自動刪除出現次數較多的垃圾郵件",IDC_CHECK_AUTODEL,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,
+                    43,230,149,10
+    CONTROL         "自動顯示回報處理, 每隔",IDC_CHECK_AUTOSHOWREPORT,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,43,217,99,
+                    10
+    EDITTEXT        IDC_EDIT_AUTOSHOWREPORT,147,215,40,14,ES_AUTOHSCROLL | 
+                    NOT WS_VISIBLE
+    LTEXT           "分鐘顯示一次",IDC_STATIC_AUTOREPORTTEXT,191,218,78,8,
+                    NOT WS_VISIBLE
+    LTEXT           "",IDC_STATIC,60,10,231,2,SS_SUNKEN | NOT WS_GROUP
+END
+
+IDD_OTHERSETUPFRM_DIALOG DIALOG DISCARDABLE  0, 0, 320, 201
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Outlook 設定",IDC_STATIC,7,8,53,8
+    LTEXT           "設定檔名稱 :",IDC_STATIC,67,19,47,8
+    COMBOBOX        IDC_COMBO1,115,17,62,51,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "其它設定",IDC_STATIC,7,30,53,8
+    CONTROL         "開機時起動",IDC_CHECK_BOOTSTART,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,67,41,53,10
+    LTEXT           "",IDC_STATIC,61,10,231,2,SS_SUNKEN | NOT WS_GROUP
+    LTEXT           "",IDC_STATIC,61,33,231,2,SS_SUNKEN | NOT WS_GROUP
+    LTEXT           "預設郵件程式 :",IDC_STATIC,67,60,60,8
+    COMBOBOX        IDC_COMBO2,129,57,69,37,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "同時起動郵件程式",IDC_CHECK_STARTWITHAP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,121,41,75,10
+    LTEXT           "整理信件目錄名稱 :",IDC_STATIC,67,79,72,8
+    EDITTEXT        IDC_EDIT_ARRANGEFOLDER,140,76,120,14,ES_AUTOHSCROLL
+    CONTROL         "自動刪除大於",IDC_CHECK_SYSAUTODEL,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,7,183,60,
+                    10
+    EDITTEXT        IDC_EDIT_SYSDELDAY,78,180,40,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    LTEXT           "日的系統訊息",IDC_STATIC,125,184,72,8,NOT WS_VISIBLE
+    PUSHBUTTON      "手動更新版本",IDC_BUTTON2,209,164,92,14,NOT WS_VISIBLE | 
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "移除 SpamDog",IDC_BUTTON3,67,143,106,14,NOT WS_TABSTOP
+    CONTROL         "自動整理郵件於",IDC_CHECK_AUTOARRANGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,68,99,67,10
+    EDITTEXT        IDC_EDIT_ARRANGEMIN,137,97,40,14,ES_AUTOHSCROLL
+    LTEXT           "分鐘的閒置時間後",IDC_STATIC,181,100,81,8
+END
+
+IDD_WEBFRM_DIALOG DIALOG DISCARDABLE  0, 0, 322, 199
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " SpamDog News !"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    WS_TABSTOP,0,0,322,199
+END
+
+IDD_MAILREPORTFRM_DIALOG DIALOG DISCARDABLE  0, 0, 375, 243
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST_MAIL,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,
+                    0,2,375,239
+END
+
+IDD_PROPPAGE_GETDOGID DIALOG DISCARDABLE  0, 0, 235, 156
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "SpamDog 設定精靈"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "取得 ""使用者編號"" 中 ... /",IDC_STATIC_MAIN,7,23,221,
+                    8
+END
+
+IDD_PROPPAGE_WELCOME DIALOG DISCARDABLE  0, 0, 267, 157
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "SpamDog Lite 設定精靈"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "下一步 : 將為您取得DogId,請確認網路連線是否正常",
+                    IDC_STATIC,70,148,190,8,NOT WS_VISIBLE
+END
+
+IDD_PROPPAGE_SETOUTLOOK DIALOG DISCARDABLE  0, 0, 251, 157
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "SpamDog Lite 設定精靈"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "請選擇您預設的郵件軟體 , 我們將修改您系統預設的郵件程式",
+                    IDC_STATIC,21,7,223,8
+    CONTROL         "Outlook",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,21,56,45,10
+    CONTROL         "Outlook Express",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,
+                    21,20,77,10
+    COMBOBOX        IDC_COMBO_OLTYPE,67,68,48,62,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "設定檔名稱",IDC_STATIC,21,71,45,8
+    PUSHBUTTON      "取得 Outlook 所有設定檔",IDC_BUTTON1,120,67,91,14
+    LTEXT           "如果您取得設定檔時,未開啟 Outlook , Outlook 會要求登入.",
+                    IDC_STATIC,21,91,213,8
+    LTEXT           "設定Outlook設定檔,可讓日後使用 SpamDog 時,省去選擇設定檔的動作",
+                    IDC_STATIC,21,103,223,8
+    LTEXT           "下一步 : 將在您設定的郵件軟體中建立SpamDog信件匣",
+                    IDC_STATIC,57,148,187,8
+END
+
+IDD_PROPPAGE_DONE DIALOG DISCARDABLE  0, 0, 239, 136
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "SpamDog Lite 設定精靈"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "SpamDog 已成功設定,按下[完成] 就可以開始使用了 !",
+                    IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,31,23,
+                    192,8
+    LTEXT           "第一步,您可以將原本收信匣中的信件,逐一學習",IDC_STATIC,
+                    53,80,168,8
+    LTEXT           "將信件拖拉至學習正常或學習垃圾的信件匣!",IDC_STATIC,53,
+                    91,168,8
+    LTEXT           "您必需學習正常的郵件大於五封後才可開始回報!",IDC_STATIC,
+                    53,102,157,8,NOT WS_VISIBLE
+END
+
+IDD_PROPPAGE_LEARNTEST DIALOG DISCARDABLE  0, 0, 269, 157
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "SpamDog Lite 設定精靈"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Learn Test",IDC_STATIC_TEXT,16,22,246,8
+    CONTROL         "[系統訊息] : 存放由垃圾郵件中心送出的系統公告",
+                    IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | NOT WS_VISIBLE | 
+                    WS_GROUP,15,87,181,8
+    LTEXT           "[垃圾信件匣] : 存放已辨識的垃圾郵件",IDC_STATIC,15,98,
+                    142,8
+    LTEXT           "[無法辨識信件匣] : 存放無法辨識的郵件,將信件拖拉到學習信件匣學習",
+                    IDC_STATIC,15,109,247,8
+    LTEXT           "[學習正常信件匣] : 將信件拖拉至此,可以將信件學習為正常信",
+                    IDC_STATIC,15,120,230,8
+    LTEXT           "[學習白名單信件匣] : 將信件拖拉至此,可以將信件的寄件者加入白名單",
+                    IDC_STATIC,15,131,247,8
+    LTEXT           "[學習垃圾信件匣] : 將信件拖拉至此,可以將信件學習為垃圾信",
+                    IDC_STATIC,15,142,224,8
+END
+
+IDD_PROPPAGE_OTHER DIALOG DISCARDABLE  0, 0, 234, 155
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "SpamDog Lite 設定精靈"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "何謂垃圾郵件 ?",IDC_STATIC1,13,7,90,8
+    LTEXT           "垃圾郵件為未經收信者同意所發送的廣告或病毒等信件",
+                    IDC_STATIC,31,17,197,8
+    LTEXT           "電子報是不是垃圾郵件 ?",IDC_STATIC2,13,33,112,8
+    LTEXT           "如果您曾同意所訂閱的電子報,不論內容是否觸及廣告,",
+                    IDC_STATIC,31,43,197,8
+    LTEXT           "皆 ""不屬於"" 垃圾郵件",IDC_STATIC,31,52,75,8
+    LTEXT           "為何需要回報垃圾郵件 ?",IDC_STATIC3,13,73,98,8
+    LTEXT           "藉由垃圾郵件的回報,我們可以分析出發信的來源 IP , ",
+                    IDC_STATIC,31,82,186,8
+    LTEXT           "並將該 IP 列入黑名單 , 接著我們會將該信件直接寄給",
+                    IDC_STATIC,31,91,196,8
+    LTEXT           "該 IP 所隸屬的 ISP 處理",IDC_STATIC,31,100,87,8
+END
+
+IDD_REPORTFRM_DIALOG DIALOG DISCARDABLE  0, 0, 392, 332
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "信件回報處理"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab2",IDC_TAB2,"SysTabControl32",0x0,7,50,378,256
+    LTEXT           "請確定以下回報的內容 , 如有信件尚未處理或學習 , 請選擇 ""稍後回報""",
+                    IDC_STATIC,65,7,308,8
+    LTEXT           "如發現來源IP判斷錯誤,類別錯誤,請用右鍵選單修改,如同一IP類別不定時,請改為""不回報""",
+                    IDC_STATIC,65,17,308,8
+    ICON            IDR_MAINFRAME,IDC_STATIC,13,16,21,23
+    LTEXT           "通常錯誤的來源IP發生時,所有的信件可能都來自於相同或接近的 IP,或公司自己的 IP",
+                    IDC_STATIC,65,27,308,8
+    LTEXT           "此時會影響整體信件的判斷 ,您必需選擇""不回報"",並與我們連絡",
+                    IDC_STATIC,65,37,307,8
+    PUSHBUTTON      "確定回報",IDC_BUTTON1,335,311,50,14
+    PUSHBUTTON      "稍後回報",IDC_BUTTON3,283,311,50,14
+    LTEXT           "Static",IDC_STATIC_COUNTER,7,317,144,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,3,2
+ PRODUCTVERSION 1,0,2,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "softworking.com\0"
+            VALUE "FileDescription", "SpamDog\0"
+            VALUE "FileVersion", "1, 0, 3, 2\0"
+            VALUE "InternalName", "SpamDog\0"
+            VALUE "LegalCopyright", "Copyright softworking.com (C) 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SpamDog.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "SpamDog\0"
+            VALUE "ProductVersion", "1, 0, 2, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x404, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SPAMDOG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 85
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_MSGFRM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 174
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_SETUPFRM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 297
+    END
+
+    IDD_SYSSETUPFRM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+
+    IDD_RULESETUPFRM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+
+    IDD_RULEEDITFRM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_MAPIFOLDER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_ABOUTTHIS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_LIVEUPDATE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+
+    IDD_WIZ_FOLDERLEARN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 266
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+
+    IDD_MSGSETUPFRM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 228
+    END
+
+    IDD_SCANSETUPFRM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 254
+    END
+
+    IDD_OTHERSETUPFRM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_MAILREPORTFRM_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 374
+        TOPMARGIN, 2
+    END
+
+    IDD_PROPPAGE_GETDOGID, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_PROPPAGE_WELCOME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_PROPPAGE_SETOUTLOOK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_PROPPAGE_DONE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 129
+    END
+
+    IDD_PROPPAGE_LEARNTEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_PROPPAGE_OTHER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_REPORTFRM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 385
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 325
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\Recycle Bin.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\hammer.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\stop.bmp"
+IDB_FOLDERLIST          BITMAP  DISCARDABLE     "res\\List.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "res\\delete.bmp"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\mail.bmp"
+IDB_BITMAP6             BITMAP  DISCARDABLE     "res\\User.bmp"
+IDB_BITMAP7             BITMAP  DISCARDABLE     "res\\spamdogap.bmp"
+IDB_BITMAP8             BITMAP  DISCARDABLE     "res\\search.bmp"
+IDB_BITMAP9             BITMAP  DISCARDABLE     "res\\mail2.bmp"
+IDB_BITMAP10            BITMAP  DISCARDABLE     "res\\NoReport.bmp"
+IDB_BITMAP11            BITMAP  DISCARDABLE     "res\\baner256.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "功能選單"
+    BEGIN
+        MENUITEM "整理郵件",                    ID_MENUITEM32777
+        MENUITEM "掃描收信匣",                  ID_MENUITEM32771
+        MENUITEM "刪除垃圾信件",                ID_MENUITEM32781
+        MENUITEM "設定",                        ID_MENUITEM32773
+        MENUITEM "結束",                        ID_MENUITEM32774
+    END
+END
+
+IDR_MENU2 MENU DISCARDABLE 
+BEGIN
+    POPUP "功能選單"
+    BEGIN
+        MENUITEM "垃圾信",                      ID_MENUITEM32778, CHECKED
+        MENUITEM "正常信",                      ID_MENUITEM32779
+        MENUITEM "不回報",                      ID_MENUITEM32780
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SYSSETUPFRM_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 8, 0
+0x754f, 0x6c74, 0x6f6f, 0x006b, 
+    IDC_COMBO2, 0x403, 16, 0
+0x754f, 0x6c74, 0x6f6f, 0x206b, 0x7845, 0x7270, 0x7365, 0x0073, 
+    0
+END
+
+IDD_OTHERSETUPFRM_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 8, 0
+0x754f, 0x6c74, 0x6f6f, 0x006b, 
+    IDC_COMBO2, 0x403, 16, 0
+0x754f, 0x6c74, 0x6f6f, 0x206b, 0x7845, 0x7270, 0x7365, 0x0073, 
+    0
+END
+
+IDD_WEBFRM_DIALOG DLGINIT
+BEGIN
+    IDC_EXPLORER1, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x31eb, 0x0000, 0x1c52, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_SPAMDOG_DIALOG DLGINIT
+BEGIN
+    IDC_EXPLORER1, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x0ceb, 0x0000, 0x0722, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MAINFRM_TRASH       "清除垃圾信"
+END
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE 4, 1
+#pragma code_page(950)
+#endif //_WIN32
+#include "res\SpamDog.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.cht\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

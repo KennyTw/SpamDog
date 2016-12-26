@@ -1,0 +1,6 @@
+LIBRARY Swsocket
+
+EXPORTS
+createHTTPObject
+SocketStartUp
+SocketCleanUp

@@ -1,0 +1,31 @@
+您好 ,
+
+    我們是反垃圾郵件系統 SpamDog , 由於接到我們的使用者反應 ,
+    貴公司發行此電子報為垃圾郵件 , 特此來信詢問 , 附件檔案是否為貴公司所發行的 
+ ?
+    如果不是我們很抱歉打擾了 , 如果是 , 我們希望您將該收信者的 email 移除 ,
+    也希望貴公司能停止發送垃圾郵件 , 我們的系統將可能阻擋該發信來源的 IP ,
+    並通報 ISP 處理 .
+
+    謝謝您的合作
+
+
+    軟體工廠 SpamDog
+    http://www.softworking.com  敬上 .
+
+Dir Sir ,
+
+    This is SpamDog (a Anti-Spam system). Since we got responses from our 
+users,
+    we need your help to check if the attachment is the EDM from your 
+company.
+    If not, we are sorry for bothering. If yes, please help to remove this 
+email address
+    from the email list and we hope you to stop send spam mail. The SpamDog 
+system
+    may block the ip from the mail and notify ISP.
+
+   Thanks for your coperation.
+
+   Best Reguard,
+   softworking SpamDog (http://www.softworking.com)

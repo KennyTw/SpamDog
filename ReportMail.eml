@@ -1,0 +1,36 @@
+From: <spamreport@softworking.com>
+Subject: Spam Mail Reporting from softworking.com
+To: <<!--Replace1-->>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=feedback-report; boundary="part1_13d.2e68ed54_boundary"
+
+--part1_13d.2e68ed54_boundary
+Content-Type: text/plain; charset="US-ASCII"
+Content-Transfer-Encoding: 7bit
+
+Dear ISP
+
+This is an unwanted email. Please take appropriate actions to stop it.
+If this spam report has any problem , please directly reply this mail to us.
+Thanks
+
+Best Regards,
+Taiwan's AntiSpam Team - softworking
+http://www.softworking.com
+For more information about this format please see http://www.mipassoc.org/arf/.
+
+--part1_13d.2e68ed54_boundary
+Content-Type: message/feedback-report
+
+Feedback-Type: abuse
+User-Agent: softworking/1.0
+Version: 0.1
+Source-IP: <!--Replace2-->
+
+--part1_13d.2e68ed54_boundary
+Content-Type: message/rfc822
+Content-Disposition: inline
+
+<!--Replace3-->
+
+--part1_13d.2e68ed54_boundary--

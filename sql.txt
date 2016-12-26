@@ -1,0 +1,4 @@
+select b.dogid, a.ip, count(*),
+(select count(*) from subtbl c, spammail d where c.orgsid=d.spammailid and  reporttime > '2005/7/5' and d.dogid=b.dogid)
+ from subtbl a, spammail b where a.orgsid=b.spammailid and  reporttime > '2005/7/5' group by b.dogid, a.ip
+having (convert(float, count(*)))/(select count(*) from subtbl c, spammail d where c.orgsid=d.spammailid and  reporttime > '2005/7/5' and d.dogid=b.dogid)>0.2 and  count(*) > 2
